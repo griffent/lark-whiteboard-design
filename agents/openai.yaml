@@ -1,0 +1,6 @@
+interface:
+  display_name: "Lark Whiteboard Design"
+  short_description: "Design polished Feishu whiteboards"
+  default_prompt: "Use $lark-whiteboard-design to create a polished Feishu whiteboard from my content."
+policy:
+  allow_implicit_invocation: true
