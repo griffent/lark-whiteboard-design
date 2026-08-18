@@ -45,6 +45,13 @@ git clone git@github.com:griffent/lark-whiteboard-design.git ~/.claude/skills/la
 
 > 实际查询、渲染、dry-run、写入飞书画板的能力由配套的 `lark-whiteboard` skill 提供，本 skill 负责其上的设计层。
 
+## 安全与隐私
+
+- 飞书链接、token、资源 ID、原始 JSON、截图、缩略图和画板原文默认按敏感信息处理。
+- 查询、导出和预览产物只能放在系统临时目录，或已被忽略的 `work/`、`tmp/` 等目录中，不能写入版本库。
+- `style-library.md` 只沉淀匿名化后的通用视觉规则，不保留来源、名称、内部项目、原文、指标、日期或访问状态。
+- 提交前检查 `git status --short`，并使用可用的密钥扫描工具检查改动。
+
 ## License
 
 [MIT](./LICENSE)

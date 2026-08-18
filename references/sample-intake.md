@@ -12,6 +12,15 @@ Accept:
 - Raw OpenAPI JSON.
 - Short notes such as "I like this style because it feels clean".
 
+## Sensitive Input Boundary
+
+Treat links, tokens, resource identifiers, raw JSON, screenshots, thumbnails, exact text, names, metrics, and dates as sensitive source material.
+
+- Query and inspect source material only in an operating-system temporary directory or an ignored `work/` / `tmp/` directory.
+- Do not copy source material into tracked files.
+- Do not retain source provenance or details that could identify the original board, person, company, product, or project.
+- If a reusable rule cannot be written without source-specific detail, do not store it.
+
 ## Extraction
 
 For links or tokens:
@@ -39,8 +48,10 @@ Good memory:
 Bad memory:
 
 - Exact confidential text from an example.
+- Source links, tokens, resource IDs, screenshots, thumbnails, or raw exports.
+- People or company names, internal product/project names, unique copy, business metrics, dates, or endpoint errors.
 - A one-off arrangement tied to one document only.
-- Raw node JSON copied without a reusable design reason.
+- Raw node JSON or exact node content, even when it appears reusable.
 
 ## Reporting Back
 
@@ -49,3 +60,5 @@ After learning from examples, summarize:
 - What style family was learned.
 - Which concrete rules were added.
 - What kinds of future boards should use it.
+
+Do not repeat source identifiers or sensitive source details in the report.
