@@ -1,3 +1,28 @@
 __pycache__/
-*.pyc
+*.py[cod]
 .DS_Store
+
+# Local working data and generated exports
+work/
+tmp/
+temp/
+exports/
+previews/
+artifacts/
+*.openapi.json
+*_raw.json
+*_nodes.json
+*_preview.png
+*_thumbnail.png
+
+# Credentials and private configuration
+.env
+.env.*
+!.env.example
+*.token
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+secrets*.json

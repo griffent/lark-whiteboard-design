@@ -32,6 +32,16 @@ If no references are provided, use the house style in `references/style-library.
 
 For reference links/tokens, use `lark-whiteboard +query` to capture both image and raw/code when possible. For screenshots, inspect the image directly and describe style traits.
 
+## Sensitive Data Handling
+
+Treat every live Feishu/Lark URL, token, resource identifier, raw JSON export, screenshot, thumbnail, and exact board copy as sensitive by default.
+
+- Never copy sensitive inputs into tracked skill files, including `references/style-library.md`.
+- Keep queries, raw exports, screenshots, previews, and intermediate source in an operating-system temporary directory or an ignored directory such as `work/` or `tmp/`.
+- Never persist source URLs, tokens, resource IDs, people or company names, internal product names, unique copy, business metrics, dates, endpoint errors, or raw node data as style memory.
+- Save only generalized visual rules that cannot be traced back to a specific board or organization. If safe generalization is not possible, do not update the style library.
+- Before finishing work in a Git checkout, inspect `git status --short`. Tracked changes must contain reusable instructions only; do not stage generated data. Run an available secret scanner on the diff before commit or push.
+
 ## Learning Workflow
 
 For each reference board, capture these traits in notes before drawing:
@@ -44,7 +54,7 @@ For each reference board, capture these traits in notes before drawing:
 - Density: node count, whitespace ratio, average text length, annotation style.
 - Interaction affordance: where a reader's eye starts and where it ends.
 
-Update `references/style-library.md` after the user approves a recurring style pattern.
+Update `references/style-library.md` only after the user approves a recurring style pattern and the result satisfies the sensitive-data rules above.
 
 ## Design Workflow
 
@@ -52,9 +62,9 @@ Update `references/style-library.md` after the user approves a recurring style p
 2. Choose a pattern from `references/patterns.md`.
 3. Sketch the layout in text: major regions, reading direction, node groups, and emphasis points.
 4. Generate source using the route required by `lark-whiteboard`.
-5. Convert to OpenAPI JSON with `whiteboard-cli`.
+5. Convert to OpenAPI JSON with `whiteboard-cli`, keeping the output in a temporary or ignored working directory.
 6. Run `scripts/whiteboard_quality_check.py` on the JSON when available.
-7. Render/export a preview image through `lark-whiteboard +query --output_as image` when possible.
+7. Render/export a preview image through `lark-whiteboard +query --output_as image` when possible, also into the temporary or ignored working directory.
 8. Fix layout issues before writing the final board.
 9. Dry-run before overwriting an existing whiteboard; ask the user before deleting existing nodes.
 
@@ -99,7 +109,7 @@ When the user sends good boards:
 
 1. Extract visual traits from 3-8 examples.
 2. Cluster them into style families such as "executive strategy map", "product architecture", or "launch timeline".
-3. Save durable rules in `references/style-library.md`.
+3. Anonymize the result and save only durable, non-identifying rules in `references/style-library.md`.
 4. Use those rules on the next live board.
 5. Compare the result against the examples and revise.
 

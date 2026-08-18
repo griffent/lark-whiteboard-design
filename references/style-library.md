@@ -1,6 +1,8 @@
 # Style Library
 
-This file stores durable style rules learned from user-approved Feishu/Lark whiteboard examples.
+This file stores durable style rules learned from user-approved, anonymized reference examples.
+
+Only reusable visual principles belong here. Never retain source links, tokens, resource IDs, raw nodes, exact copy, screenshots, names, internal product/project terms, business metrics, dates, endpoint errors, or other source provenance.
 
 ## House Style v0
 
@@ -48,7 +50,7 @@ Append user-approved style families here.
 ### Layered Capability Map With Scenario Rail
 
 Name: Layered Capability Map With Scenario Rail
-Reference source: User-provided Feishu whiteboard example, learned from raw nodes on 2026-06-02. Image export was unavailable because the Feishu thumbnail endpoint returned 403, so this style is inferred from node geometry and styles.
+Reference source: Anonymized reference sample.
 Best for: Business architecture maps, AI/product capability maps, platform strategy, operating model decomposition, and leadership explanations where readers need to see layers, capability groups, and business touchpoints together.
 Layout:
 - Use a wide-but-balanced canvas around 1100 x 900.
@@ -87,7 +89,7 @@ Avoid:
 ### Product Evolution Storyboard
 
 Name: Product Evolution Storyboard
-Reference source: User-provided Feishu whiteboard example 2, learned from raw nodes on 2026-06-02.
+Reference source: Anonymized reference sample.
 Best for: Product vision evolution, current-state to ideal-state narratives, phased product roadmaps, and "from pain point to future capability" explanations.
 Layout:
 - Use a very wide panoramic canvas when comparing many stages.
@@ -118,7 +120,7 @@ Avoid:
 ### Minimal Three-Step Asset Pipeline
 
 Name: Minimal Three-Step Asset Pipeline
-Reference source: User-provided Feishu whiteboard example 3, learned from raw nodes on 2026-06-02.
+Reference source: Anonymized reference sample.
 Best for: Simple methodology, enablement process, asset production loop, "three prerequisites" explanation, and onboarding flows.
 Layout:
 - Use three equal-width cards in a single row.
@@ -144,7 +146,7 @@ Avoid:
 ### Clear Bridge Decision Map
 
 Name: Clear Bridge Decision Map
-Reference source: User-provided Feishu whiteboard example 4, explicitly noted by the user as clear-thinking.
+Reference source: Anonymized reference sample.
 Best for: Explaining how multiple inputs, constraints, skills, and scenarios route into a final output; design automation flows; agent orchestration; decision maps.
 Layout:
 - Use a near-square canvas, not an ultra-wide one.
@@ -178,7 +180,7 @@ Avoid:
 ### Workflow Roadmap With Capability Chips
 
 Name: Workflow Roadmap With Capability Chips
-Reference source: User-provided Feishu whiteboard example 5, learned from raw nodes on 2026-06-02.
+Reference source: Anonymized reference sample.
 Best for: Design workflow maps, AI capability planning, multi-stage operating workflows, and capability coverage across phases.
 Layout:
 - Use a wide canvas around 1600 x 800.
